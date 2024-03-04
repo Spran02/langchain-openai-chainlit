@@ -13,6 +13,9 @@ from langchain.docstore.document import Document
 from langchain.memory import ChatMessageHistory, ConversationBufferMemory
 
 import chainlit as cl
+# from dotenv import load_dotenv
+# load_dotenv()
+
 
 os.environ["OPENAI_API_KEY"] = "OPENAI_API_KEY"
 
