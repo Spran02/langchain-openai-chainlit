@@ -1,10 +1,13 @@
 # Import necessary modules and define env variables
 
+from langchain_community.vectorstores import Chroma
+from langchain_community.chat_models import ChatOpenAI
+
 from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain.vectorstores import Chroma
+# from langchain.vectorstores import Chroma
 from langchain.chains import RetrievalQAWithSourcesChain
-from langchain.chat_models import ChatOpenAI
+# from langchain.chat_models import ChatOpenAI
 from langchain.prompts.chat import (
     ChatPromptTemplate,
     SystemMessagePromptTemplate,
